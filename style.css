@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+h1{
+    margin-bottom: 1%;
+}
+
+.inputBox{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 80%;
+    height: 55px;
+    background-color: rgb(237,237,237);
+}
+
+.enter{
+    width: 100%;
+    background-color: rgb(237,237,237);
+    border: none;
+    margin-left: 1%;
+}
+
+.enter:focus {
+    outline: none;
+}
+
+.btn{width: 8%;
+    margin: .4%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.finalOutputBox{
+    margin-top: 2%;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(237,237,237);
+    padding: 20px;
+    min-height: 90px;
+}
+
+p{
+    margin-left:.5%;
+}
+
+.photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+
+.allPart {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.upbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: rgb(237, 237, 237);
+    width: 95%;
+}
+
+.mbox {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.lbox {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(237, 237, 237);
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+h6{
+    font-size: 18px;
+}
+
+
+/* responsive */
+
+@media only screen and (min-width: 350px) and (max-width: 1260px) {
+    main {
+        padding-left: 5%;
+    }
+
+    .inputBox {
+        width: 100%;
+        max-width: none;
+    }
+
+    .btn {
+        width: 15%;
+    }
+
+    .finalOutputBox {
+        width: 100%;
+        max-width: none;
+    }
+
+    .photo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
